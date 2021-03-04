@@ -37,6 +37,11 @@ paths:
                   blocked: {}
                   role:
                     type: object
+                    required:
+                      - id
+                      - name
+                      - description
+                      - type
                     properties:
                       id:
                         type: number
@@ -49,11 +54,6 @@ paths:
                       type:
                         type: string
                         minLength: 1
-                    required:
-                      - id
-                      - name
-                      - description
-                      - type
                   created_at:
                     type: string
                     minLength: 1

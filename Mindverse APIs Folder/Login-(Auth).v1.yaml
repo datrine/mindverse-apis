@@ -85,7 +85,13 @@ paths:
                   type: string
                 password:
                   type: string
-        description: Identifier can be eithher username or email
+        description: |-
+          Identifier can be either username or email. 
+
+          Successful response is an object that has 2 properties: jwt & user.
+
+          Please save jwt securely. It must be included as the Authorization header in the form "Bearer jwt_value".
+           
       description: User login with authenticated access.
 components:
   schemas:
